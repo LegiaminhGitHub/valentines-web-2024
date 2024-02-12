@@ -19,6 +19,8 @@
   z-index: 99;
   top: 200px;
   left: 100px;
+  overflow-y: hidden;
+  overflow-x:visible;
   transform-origin:top; /* Set the scaling origin to the bottom edge */
   transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
@@ -34,6 +36,7 @@
 #button_yes{
   background-color: green;
   color: white;
+  font-size: 20px;
 }
 
 #button_no{

@@ -14,6 +14,7 @@ function Main_page() {
     const [left_val , setLeft_val] = useState("600px")
     const [top_val , setTop_val] = useState("500px")
     const [text , setText] = useState("");
+    const [text_yes  , setText_yes] = useState("20px");
     function navigateToThanks() {
         navigate("/thanks");
     }
@@ -22,10 +23,11 @@ function Main_page() {
         setNoBttnHeight((prevHeight) => (parseInt(prevHeight) - 10) + "px");
         setNoBttnWidth((prevWidth) => (parseInt(prevWidth) - 10) + "px");
         setYesBttnHeight((prevHeight) => (parseInt(prevHeight) + 20) + "px");
-        setYesBttnWidth((prevWidth) => (parseInt(prevWidth) + 60) + "px");
+        setYesBttnWidth((prevWidth) => (parseInt(prevWidth) + 40) + "px");
         setnobttnclick((prevClick) => prevClick + 1);
         setLeft_val((prevLeft_val) => `${parseInt(prevLeft_val) - 5}px`);
         setTop_val((prevTop_val) => `${parseInt(prevTop_val) - 5}px`);
+        setText_yes((prevtext_yes) => (parseInt(prevtext_yes) + 10) + "px")
         setText(message[nobtntimesclicked]);
     }
     return (
@@ -39,7 +41,7 @@ function Main_page() {
                 <button
                     id="button_yes"
                     className="buttonW"
-                    style={{ height: yesBttnHeight, width: yesBttnWidth , top : top_val , left : left_val }}
+                    style={{ height: yesBttnHeight, width: yesBttnWidth , top : top_val , left : left_val  , fontSize : text_yes }}
                     onClick={navigateToThanks}
                 >
                     Yes
