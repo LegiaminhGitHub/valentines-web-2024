@@ -22,7 +22,7 @@ function Main_page() {
         setNoBttnHeight((prevHeight) => (parseInt(prevHeight) - 10) + "px");
         setNoBttnWidth((prevWidth) => (parseInt(prevWidth) - 10) + "px");
         setYesBttnHeight((prevHeight) => (parseInt(prevHeight) + 20) + "px");
-        setYesBttnWidth((prevWidth) => (parseInt(prevWidth) + 20) + "px");
+        setYesBttnWidth((prevWidth) => (parseInt(prevWidth) + 60) + "px");
         setnobttnclick((prevClick) => prevClick + 1);
         setLeft_val((prevLeft_val) => `${parseInt(prevLeft_val) - 5}px`);
         setTop_val((prevTop_val) => `${parseInt(prevTop_val) - 5}px`);
